@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donatus Franca Sharon | Social Media Manager</title>
+<meta name="description" content="Social Media Manager, Content Creator and Paid Ads specialist with 7+ years growing brands across Instagram, Facebook, TikTok and LinkedIn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7F2;
+    --surface:#FFFFFF;
+    --ink:#1C1917;
+    --muted:#6B625A;
+    --line:#EAE2D8;
+    --accent:#D9480F;      /* warm coral-orange */
+    --accent-soft:#FDE8DD;
+    --dark:#1C1917;
+    --radius:18px;
+    --shadow:0 10px 30px -12px rgba(28,25,23,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+  /* ---------- NAV ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,247,242,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+  .logo span{color:var(--accent)}
+  .nav-links{display:flex;gap:28px;font-weight:500;font-size:.95rem}
+  .nav-links a:hover{color:var(--accent)}
+  .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:#B93C0B;transform:translateY(-2px)}
+  .btn-ghost{border:1.5px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:80px 0 70px}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.5vw,4rem);margin:14px 0 20px}
+  .hero h1 em{font-style:italic;color:var(--accent)}
+  .hero p.lead{font-size:1.12rem;color:var(--muted);max-width:540px;margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .avail{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:500}
+  .avail i{width:8px;height:8px;border-radius:50%;background:#16A34A;box-shadow:0 0 0 4px rgba(22,163,74,.15)}
+
+  /* Profile photo slot */
+  .photo-frame{position:relative;justify-self:center;width:100%;max-width:380px;aspect-ratio:4/5}
+  .photo-frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:var(--radius);background:var(--accent-soft);border:1.5px solid var(--accent)}
+  .photo{position:relative;width:100%;height:100%;border-radius:var(--radius);overflow:hidden;background:linear-gradient(145deg,#F3E9DF,#E9DCCD);box-shadow:var(--shadow)}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .photo .placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:.9rem;text-align:center;padding:20px}
+  .photo .placeholder b{font-family:'Fraunces',serif;font-size:4rem;color:var(--accent);line-height:1}
+  .photo-badge{position:absolute;bottom:-14px;left:-14px;background:var(--dark);color:#fff;padding:12px 18px;border-radius:14px;font-size:.85rem;box-shadow:var(--shadow)}
+  .photo-badge strong{display:block;font-family:'Fraunces',serif;font-size:1.4rem;color:#FFB38A}
+
+  /* ---------- STATS ---------- */
+  .stats{background:var(--dark);color:#fff;padding:46px 0}
+  .stats .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;text-align:center}
+  .stat strong{display:block;font-family:'Fraunces',serif;font-size:2.4rem;color:#FFB38A}
+  .stat span{font-size:.88rem;color:#D6CFC7}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:90px 0}
+  .sec-head{max-width:640px;margin-bottom:46px}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-top:10px}
+  .sec-head p{color:var(--muted);margin-top:12px}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .about-grid p{color:var(--muted);margin-bottom:16px}
+  .about-grid p strong{color:var(--ink)}
+  .edu{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .edu h3{font-size:1.15rem;margin-bottom:14px}
+  .edu li{list-style:none;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+  .edu li:last-child{border:0}
+  .edu li span{display:block;color:var(--muted);font-size:.85rem}
+
+  /* Work / brands */
+  .brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+  .brand{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;transition:.25s}
+  .brand:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+  .brand-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+  .brand-mark{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;color:#fff;flex-shrink:0}
+  .tag{font-size:.75rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:5px 12px;border-radius:999px;white-space:nowrap}
+  .brand h3{font-size:1.35rem;margin-bottom:4px}
+  .brand .meta{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+  .brand p{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+  .brand ul{margin:0 0 20px 0;padding:0}
+  .brand ul li{list-style:none;font-size:.9rem;padding-left:22px;position:relative;margin-bottom:6px}
+  .brand ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .result{background:var(--bg);border-left:3px solid var(--accent);padding:10px 14px;border-radius:0 10px 10px 0;font-size:.9rem;font-weight:600;margin-bottom:20px}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+  .links a{font-size:.85rem;font-weight:600;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);transition:.2s}
+  .links a:hover{border-color:var(--accent);color:var(--accent)}
+  .links a::after{content:" ↗"}
+
+  /* Services */
+  .services{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{padding:28px;border-radius:var(--radius);background:var(--bg);border:1px solid var(--line)}
+  .svc .num{font-family:'Fraunces',serif;font-size:.95rem;color:var(--accent);font-weight:700}
+  .svc h3{font-size:1.2rem;margin:10px 0 8px}
+  .svc p{font-size:.93rem;color:var(--muted)}
+  .tools{margin-top:46px}
+  .tools h3{font-size:1.1rem;margin-bottom:16px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chips span{background:var(--bg);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.88rem;font-weight:500}
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}
+  .testi{background:var(--dark);color:#F5EFE8;border-radius:var(--radius);padding:36px;position:relative}
+  .testi::before{content:"\201C";font-family:'Fraunces',serif;font-size:6rem;line-height:1;color:var(--accent);position:absolute;top:14px;left:26px;opacity:.9}
+  .testi blockquote{font-size:1.05rem;line-height:1.75;margin:46px 0 26px;font-style:italic}
+  .testi .who{display:flex;align-items:center;gap:14px}
+  .testi .av{width:48px;height:48px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-weight:700;color:#fff}
+  .testi .who strong{display:block}
+  .testi .who span{font-size:.85rem;color:#BDB3A8}
+  .testi.empty{background:transparent;border:2px dashed var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;min-height:260px}
+  .testi.empty::before{display:none}
+
+  /* Contact */
+  .contact{background:var(--accent);color:#fff;border-radius:28px;padding:64px 48px;text-align:center}
+  .contact h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:14px}
+  .contact p{opacity:.92;max-width:560px;margin:0 auto 32px}
+  .contact-row{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+  .contact-row a{background:#fff;color:var(--ink);padding:13px 22px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s}
+  .contact-row a:hover{transform:translateY(-2px)}
+  .contact-row a.alt{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.88rem}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;gap:56px}
+    .photo-frame{max-width:320px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr)}
+    .stats .stat:last-child{grid-column:span 2}
+    .about-grid{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--line)}
+    .nav-links.open{display:flex}
+    .menu-btn{display:block}
+    .hero{padding:50px 0}
+    section{padding:64px 0}
+    .brands,.testi-grid{grid-template-columns:1fr}
+    .contact{padding:48px 24px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Franca<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="avail"><i></i> Available for new roles &amp; projects</span>
+      <p class="eyebrow" style="margin-top:22px">Social Media Manager · Content Creator · Ads &amp; SEO</p>
+      <h1>I make brands <em>impossible</em> to scroll past.</h1>
+      <p class="lead">I'm Donatus Franca Sharon, a social media manager with 7+ years of experience growing visibility, engagement and sales for brands across Instagram, Facebook, TikTok, X and LinkedIn. I plan the strategy, shoot the content, edit the reels and track the results.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See my work →</a>
+        <!-- Put your CV PDF in the same folder and name it Donatus_Franca_CV.pdf -->
+        <a href="Donatus_Franca_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+      </div>
+    </div>
+
+    <!-- ===== PROFILE PHOTO =====
+         Save your photo in the same folder as this file and name it "profile.jpg".
+         A portrait (taller than wide) photo looks best. -->
+    <div class="photo-frame">
+      <div class="photo">
+        <div class="placeholder"><b>DF</b>Add your photo<br><small>(save it as profile.jpg)</small></div>
+        <img src="https://drive.google.com/file/d/1DBaTrcY3Y68I_u--4wClh5hDwhaRM4vL/view?usp=sharing" alt="Donatus Franca Sharon" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-badge"><strong>11+</strong>brands managed at once</div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><strong>7+</strong><span>Years of experience</span></div>
+    <div class="stat"><strong>11+</strong><span>Brands managed</span></div>
+    <div class="stat"><strong>+30%</strong><span>Follower growth, Shop Nadra</span></div>
+    <div class="stat"><strong>+15%</strong><span>Monthly sales, Everythingfifi</span></div>
+    <div class="stat"><strong>+25%</strong><span>Engagement from visual content</span></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">About me</p>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.7rem);margin:10px 0 22px">Strategy, content and results in one person.</h2>
+      <p>I started out behind the camera as a <strong>fashion photographer and content creator</strong>, so I know how to make products, spaces and transformations look their best on screen.</p>
+      <p>Since then I've managed social media for brands in <strong>Nigeria, the UK and Australia</strong>, across construction, fashion, solar energy, van rentals, care services and sustainability. I've handled content strategies for more than 11 brands at the same time.</p>
+      <p>I bring together <strong>creative content</strong> (reels, carousels, captions), <strong>paid social</strong> (Meta and Google Ads) and <strong>SEO</strong>, and I use performance data to decide what to make next.</p>
+    </div>
+    <div class="edu">
+      <h3>Education &amp; training</h3>
+      <ul>
+        <li>B.Sc. Mass Communication<span>Baze University, Abuja · 2018 – 2021</span></li>
+        <li>Certification in Content Creation<span>Professional training</span></li>
+        <li>Certification in Photography<span>Professional training</span></li>
+        <li>Based in Lagos, Nigeria<span>Open to on-site, hybrid and remote work</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Brands I've grown</h2>
+      <p>Click through to each brand's live social pages to see the content I've planned, created and published.</p>
+    </div>
+
+    <div class="brands">
+
+      <!-- Double Standard -->
+      <article class="brand">
+        <div class="brand-top">
+          <div class="brand-mark" style="background:#1C1917">DS</div>
+          <span class="tag">Current role</span>
+        </div>
+        <h3>Double Standard Ltd</h3>
+        <div class="meta">Construction &amp; home services · London, UK · Sept 2026 – Present</div>
+        <p>I manage all social media for a London construction, renovation and home-services company built around the message "Built to a higher standard."</p>
+        <ul>
+          <li>Monthly content calendars and before-and-after transformation reels</li>
+          <li>On-site project photos and progress content made with the site team</li>
+          <li>Captions and local SEO aimed at quote requests across London</li>
+          <li>Replying to comments and DMs and guiding leads to request a quote</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.instagram.com/doublestandarduk/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61593620619324" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </article>
+
+      <!-- Onlyvanrentals -->
+      <article class="brand">
+        <div class="brand-top">
+          <div class="brand-mark" style="background:#2563EB">OV</div>
+          <span class="tag">Australia</span>
+        </div>
+        <h3>Onlyvanrentals</h3>
+        <div class="meta">Van hire · Australia · via Bellviv Professionals</div>
+        <p>Social content for a van rental business, focused on making hiring a van simple, reliable and affordable for movers and small businesses.</p>
+        <ul>
+          <li>Short-form video for TikTok and Instagram Reels</li>
+          <li>Promotional posts and offers to drive bookings</li>
+          <li>Captions with search-friendly keywords for local discovery</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.instagram.com/onlyvansrentals/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1DpPGDkaDd/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@onlyvanrentals" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </article>
+
+      <!-- Solarmanda -->
+      <article class="brand">
+        <div class="brand-top">
+          <div class="brand-mark" style="background:#CA8A04">SM</div>
+          <span class="tag">Solar energy</span>
+        </div>
+        <h3>Solarmanda</h3>
+        <div class="meta">Solar energy · via Bellviv Professionals</div>
+        <p>Educational and awareness content that explains the benefits of solar energy and builds trust with homeowners and businesses.</p>
+        <ul>
+          <li>Educational carousels that explain how solar works</li>
+          <li>Brand awareness campaigns and a consistent visual identity</li>
+          <li>Monthly reporting with insights and recommendations</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.instagram.com/solarmanda_/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1GtYMaCdfd/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </article>
+
+      <!-- Everythingfifi -->
+      <article class="brand">
+        <div class="brand-top">
+          <div class="brand-mark" style="background:#BE185D">EF</div>
+          <span class="tag">Fashion</span>
+        </div>
+        <h3>Everythingfifi Fashion House</h3>
+        <div class="meta">Fashion · Lagos, Nigeria · 2022 – Present</div>
+        <p>Content and campaigns for a Lagos fashion house, including styling tips, product highlights, flash sales and live Q&amp;A sessions.</p>
+        <div class="result">Result: +15% increase in monthly sales from paid and organic campaigns</div>
+        <div class="links">
+          <a href="https://www.instagram.com/everythingfif_/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61582633042986" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </article>
+
+      <!-- Shop Nadra -->
+      <article class="brand">
+        <div class="brand-top">
+          <div class="brand-mark" style="background:#7C3AED">SN</div>
+          <span class="tag">Fashion e-commerce</span>
+        </div>
+        <h3>Shop Nadra</h3>
+        <div class="meta">Fashion retail · Ajah, Lagos · 2019 – 2025</div>
+        <p>I started as the brand's photographer and content creator, then became its Social Media and Website Manager, handling strategy, product photography and SEO for the website.</p>
+        <div class="result">Results: +30% followers and +25% engagement rate</div>
+        <div class="links">
+          <a href="https://www.instagram.com/shopnandra/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What I do</p>
+      <h2>Services</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="num">01</div><h3>Social media management</h3><p>Strategy, content calendars, scheduling and day-to-day management across every platform.</p></div>
+      <div class="svc"><div class="num">02</div><h3>Content creation</h3><p>Photography, filming, and editing short-form video for Reels, TikTok and YouTube Shorts.</p></div>
+      <div class="svc"><div class="num">03</div><h3>Copywriting</h3><p>Captions, hooks and campaign copy that match the brand voice and drive action.</p></div>
+      <div class="svc"><div class="num">04</div><h3>Paid social ads</h3><p>Meta and Google Ads campaigns with careful audience targeting and retargeting.</p></div>
+      <div class="svc"><div class="num">05</div><h3>SEO &amp; website content</h3><p>Keyword research, on-page optimisation and Google Business Profile management.</p></div>
+      <div class="svc"><div class="num">06</div><h3>Community &amp; reporting</h3><p>Handling comments and DMs, plus monthly reports that turn data into clear next steps.</p></div>
+    </div>
+    <div class="tools">
+      <h3>Tools I use</h3>
+      <div class="chips">
+        <span>Canva</span><span>Adobe Premiere Pro</span><span>CapCut</span><span>Meta Business Suite</span>
+        <span>Meta Ads Manager</span><span>Google Ads</span><span>Google Analytics</span><span>Google Search Console</span>
+        <span>Google Business Profile</span><span>Instagram</span><span>TikTok</span><span>Facebook</span><span>LinkedIn</span><span>X (Twitter)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Kind words</p>
+      <h2>What clients say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <blockquote>Franca has completely transformed how Double Standard shows up online. She understands our work, captures our projects beautifully, and turns every renovation into content that people actually stop and watch. She's organised, reliable and proactive, works well with our site team, and always responds to enquiries quickly and professionally. Since she took over our social media, our brand looks more professional and we're getting more people asking for quotes. I'd recommend her to any business that wants to be taken seriously online.</blockquote>
+        <div class="who">
+          <div class="av">EA</div>
+          <div><strong>Emmanuel Adeniyi</strong><span>Operations Manager, Double Standard Ltd</span></div>
+        </div>
+      </div>
+
+      <!-- To add another testimonial, copy the block above (from <div class="testi"> to its closing </div>) and paste it here. -->
+      <div class="testi empty">More testimonials coming soon.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let's grow your brand together.</h2>
+      <p>Looking for someone to own your social media, from filming and editing to posting and reporting? I'd love to hear about your brand.</p>
+      <div class="contact-row">
+        <a href="mailto:donatusfranca@gmail.com">✉ donatusfranca@gmail.com</a>
+        <a href="https://wa.me/2348108654401" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+2349112478311" class="alt">📞 0911 247 8311</a>
+        <a href="tel:+2348108654401" class="alt">📞 0810 865 4401</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="yr"></span> Donatus Franca Sharon · Social Media Manager · Lagos, Nigeria
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+</script>
+</body>
+</html>
